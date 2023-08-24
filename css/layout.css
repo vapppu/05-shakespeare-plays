@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+ul {
+  list-style: disc;
+  padding: 1rem 1rem 1rem 4rem;
+  list-style: 1.5;
+}
+h1,
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  display: inline-block;
+}
+table {
+  margin-bottom: 1rem;
+}
+tr {
+  line-height: 1.5;
+}
+td {
+  padding-right: 1rem;
+}
+i.before-text {
+  padding-inline-end: 0.5rem;
+}
+i.after-text {
+  padding-inline-start: 0.5rem;
+}
+.vierekkain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.vierekkain h3 {
+  margin-block-end: 1rem;
+}
+.vierekkain li ul {
+  background-color: lightgray;
+}
+.vierekkain > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  list-style: none;
+}
+.dotted {
+  color: brown;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline dotted 2px;
+}
+.allekkain {
+  width: 100%;
+}
+.allekkain tr {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.allekkain tr > * {
+  flex-basis: 33%;
+  flex-grow: 0;
+}
+.allekkain tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+#kolmas .allekkain tr {
+  max-width: 66%;
+}
+#kolmas .allekkain tr > * {
+  flex-basis: 50%;
+}
